@@ -4,168 +4,72 @@
 
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="normalize.css"
-  <link rel="stylesheet" type="text/css" href="album.css"
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="menu.js"></script>
-<div style="width:100%;height:15px;border:0px solid #000;"></div>
-<center><div style="font-size:50px; font-family:skia; font-weight:lighter;">&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Tyler <img src="logo.png" alt="" style="width:150px; height:150px;"> Lian&nbsp;&nbsp;</div></center>
+  <div style="width:100%;height:15px;border:0px solid #000;"></div>
+  <center><div style="font-size:50px; font-family:skia.ttf; font-weight:100;">Tyler <img src="Logo.png" alt="" style="width:150px; height:150px;"> Lian</div></center>
 
 
 
 <hr size="20px" width="1210px">
-<span class="text-nowrap" style="font-size:20px; color:gray;"><center><span onclick="openNav()">
-&emsp;&nbsp;&nbsp;<img src="menu.png" style="width:20px; height:20px;"></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;flyers&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+<span class="text-nowrap" style="font-size:20px; color:gray;"><center></span>
 
+<a style="text-decoration:none; color:gray; text-indent:1000px;" href="file:///C:/Users/tyler/Documents/GitHub/tylerlian.github.io/index.html">home</a> &emsp;<a style="text-decoration:none; color:gray; font-weight:bold;" href="file:///C:/Users/tyler/Documents/GitHub/tylerlian.github.io/flyers.html">flyers</a>&emsp;<a style="text-decoration:none; color:gray;" href="file:///C:/Users/tyler/Documents/GitHub/tylerlian.github.io/geofilters.html">geofilters</a>&emsp;<a style="text-decoration:none; color:gray;" href="file:///C:/Users/tyler/Documents/GitHub/tylerlian.github.io/overlays.html">overlays</a>&emsp;<a style="text-decoration:none; color:gray;" href="file:///C:/Users/tyler/Documents/GitHub/tylerlian.github.io/about.html">about</a></center></span>
+<div style="width:100%;height:20px;border:0px solid #000;"></div>
+
+<style>
+    .footer{
+    
+      height:70px;
+      width:100%;
+      right:0;
+      bottom:0;
+      left:0;
+      padding:1rem;
+      background-color:white;
+    }
+
+
+    .shadow-effects {
+      width: 80%;
+      height: 50px;
+      background-color: #e6e6e6;
+      float: left;
+      padding: 3px; /* 10px padding */
+      background-clip: content-box; /* <---- */
+      box-shadow: inset 0 0 0 1px black; /* <-- 10px spread radius */
+      transition: transform .2s; /* Animation */
+      margin: 0 auto;
+    }
+
+    .shadow-effects:hover {
+      transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+</style>
 <hr size="20px" width="1210px">
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="file:///Users/summercamp/Documents/holbertonschool-learning_web_programming/index.html">Home</a>
-  <a href="file:///Users/summercamp/Documents/holbertonschool-learning_web_programming/flyers.html">Flyers</a>
-  <a href="file:///Users/summercamp/Documents/holbertonschool-learning_web_programming/geofilters.html">Geofilters</a>
-  <a href="file:///Users/summercamp/Documents/holbertonschool-learning_web_programming/overlays.html">Overlays</a>
-  <a href="file:///Users/summercamp/Documents/holbertonschool-learning_web_programming/about.html">About</a>
-</div>
 
-<meta charset="utf-8">
-<title>My page</title>
-
-<!-- CSS -->
-<link rel="stylesheet" type="text/css" href="album.css">
-</head>
-<script>
-function openModal() {
-document.getElementById('myModal').style.display = "block";
-}
-
-function closeModal() {
-document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-var i;
-var slides = document.getElementsByClassName("mySlides");
-var dots = document.getElementsByClassName("demo");
-var captionText = document.getElementById("caption");
-if (n > slides.length) {slideIndex = 1}
-if (n < 1) {slideIndex = slides.length}
-for (i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none";
-}
-for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex-1].style.display = "block";
-dots[slideIndex-1].className += " active";
-captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
 <body>
   <center>
-    <table style="width:605px;display:inline-block;float:left;">
+    <table style="width:602.5px;display:inline-block;margin:0;">
     <tr>
-      <td><img src="pub.jpg" style="width:302.5px;height:302.5px;margin:0;" onclick="openModal();currentSlide(1)" class="hover-shadow"><img src="cherry.jpg" style="width:302.5px;height:302.5px;margin:0;" onclick="openModal();currentSlide(5)" class="hover-shadow"><td>
-
-  </tr>
-  <tr>
-<td><img src="square_shiba.jpg" style="width:605px;height:605px;" onclick="openModal();currentSlide(3)" class="hover-shadow"></td>
-    </tr>
-    </table>
-    <table style="width:605px;display:inline-block;float:top;">
-    <tr>
-    <td><img src="square_totoro.jpg" style="width:605px;height:605px;" onclick="openModal();currentSlide(4)" class="hover-shadow"></td>
+      <td><img src="pub.jpg" style="width:302.5px;height:302.5px;margin:0;" class="shadow-effects"><img src="cherry.jpg" style="width:302.5px;height:302.5px;margin:0;" class="shadow-effects"><td>
     </tr>
     <tr>
-      <td><img src="square_erased.jpg" style="width:302.5px;height:302.5px;margin:0;" onclick="openModal();currentSlide(1)" class="hover-shadow"><img src="square_picnic.jpg" style="width:302.5px;height:302.5px;margin:0;" onclick="openModal();currentSlide(2)" class="hover-shadow"><td>
+      <td><img src="square_shiba.jpg" style="width:605px;height:605px;" class="shadow-effects"></td>
+    </tr>
+    </table><table style="width:602.5px;display:inline-block;margin:0;">
+    <tr>
+    <td><img src="square_totoro.jpg" style="width:605px;height:605px;" class="shadow-effects"></td>
+    </tr>
+    <tr>
+      <td><img src="square_erased.jpg" style="width:302.5px;height:302.5px;margin:0;" class="shadow-effects"><img src="square_picnic.jpg" style="width:302.5px;height:302.5px;margin:0;" class="shadow-effects"><td>
     </tr>
     </table>
   </center>
-<!--
-<table style='width:611px;'
-<tr>
-<th>
-  <div class="column">
-    <img src="square_shiba.jpg" style="width:596px;height:596px;" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div></th>
-</tr>
-</table>
 
-<div class="column">
-  <img src="square_totoro.jpg" style="width:500px;height:500px;" onclick="openModal();currentSlide(4)" class="hover-shadow">
-</div>
--->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="erased.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="picnic.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="shiba.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="totoro.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext"></div>
-        <img src="cherry.jpg" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <div class="column">
-      <img class="demo" src="rsz_erased.jpg" onclick="currentSlide(1)" alt="Erased">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="rsz_picnic.jpg" onclick="currentSlide(2)" alt="A2 Picnic">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="rsz_shiba.jpg" onclick="currentSlide(3)" alt="Shiba Inu">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="rsz_totoro.jpg" onclick="currentSlide(4)" alt="Totoro">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="cherry.jpg" style="width:300px;height:300px;" onclick="currentSlide(5)" alt="Cherry Blossom">
-    </div>
-  </div>
-</div>
 <hr size="20px" width="1210px">
-<div class="footer" align="center">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://www.facebook.com/HolbertonSchool/"><img src="facebook.png" style="width:50px;height:50px;"></a>&emsp;<a href="https://twitter.com/holbertonschool?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png"style="width:50px;height:50px;"></a>&emsp;<a href="https://www.instagram.com/holbertonschool/?hl=en"><img src="instagram.png"style="width:50px;height:50px;"></a></div>
-<hr size="20px" width="1210px">
+<div class="footer" align="center">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://www.facebook.com/HolbertonSchool/"><img src="facebook.png" style="width:50px;height:50px;"></a>&emsp;<a href="https://twitter.com/holbertonschool?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twitter.png"style="width:50px;height:50px;"></a>&emsp;<a href="https://www.instagram.com/holbertonschool/?hl=en"><img src="instagram.png"style="width:50px;height:50px;"></a></div><hr size="20px" width="1210px">
 </body>
 </html>
